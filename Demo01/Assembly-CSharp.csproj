@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CubeMove.cs" />
+     <Compile Include="Assets\Scripts\EarthRotate.cs" />
      <Compile Include="Assets\Scripts\InputMove.cs" />
      <Compile Include="Assets\Scripts\ProjectInsta.cs" />
  <Reference Include="UnityEngine.UI">
