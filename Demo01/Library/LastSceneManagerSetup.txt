@@ -1,1 +1,4 @@
-sceneSetups: []
+sceneSetups:
+- path: Assets/Scenes/Earth rotates the Sun.unity
+  isLoaded: 1
+  isActive: 1
