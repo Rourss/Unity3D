@@ -22,7 +22,10 @@ public class CubeMove : MonoBehaviour
     }
     void LateUpdate()
     {
-        //通过脚本让主摄像机跟着物体移动，但不改变跟着物体改变视角
-        ThirdCamera.transform.position = transform.position + new Vector3(0, 1.96f, -14.45f);
+        //通过脚本让主摄像机跟着物体移动，但不跟着物体改变视角
+        //ThirdCamera.transform.position = transform.position + new Vector3(0, 1.96f, -14.45f);
+
+        //通过脚本让主摄像机跟着物体移动，摄像机有短暂的延迟移动
+        ThirdCamera.transform.position = Vector3.Lerp(ThirdCamera.transform.position,transform.position + new Vector3(0, 1.96f, -14.45f), Time.deltaTime * 5);
     }
 }
