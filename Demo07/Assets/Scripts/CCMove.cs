@@ -18,16 +18,24 @@ public class CCMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetAxisRaw("Vertical") != 0)
+        {
+            WuKong.SetBool("IsWalk", true);
+            CC.SimpleMove(transform.forward * speed * Time.deltaTime * Input.GetAxisRaw("Vertical"));
+
+        }
+        if (Input.GetAxisRaw("Vertical") == 0)
+        {
+            WuKong.SetBool("IsWalk", false);
+        }
         if (Input.GetAxisRaw("Horizontal") != 0)
         {
             WuKong.SetBool("IsWalk", true);
-            CC.SimpleMove(transform.forward * speed * Time.deltaTime * Input.GetAxisRaw("Horizontal"));
-
+            CC.SimpleMove(transform.right * speed * Time.deltaTime * Input.GetAxisRaw("Horizontal"));
         }
         if (Input.GetAxisRaw("Horizontal") == 0)
         {
             WuKong.SetBool("IsWalk", false);
         }
-
     }
 }
