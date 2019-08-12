@@ -22,7 +22,6 @@ public class CCMove : MonoBehaviour
         {
             WuKong.SetBool("IsWalk", true);
             CC.SimpleMove(transform.forward * speed * Time.deltaTime * Input.GetAxisRaw("Vertical"));
-
         }
         if (Input.GetAxisRaw("Vertical") == 0)
         {
@@ -31,7 +30,7 @@ public class CCMove : MonoBehaviour
         if (Input.GetAxisRaw("Horizontal") != 0)
         {
             WuKong.SetBool("IsWalk", true);
-            CC.SimpleMove(transform.right * speed * Time.deltaTime * Input.GetAxisRaw("Horizontal"));
+            transform.Rotate(transform.up * speed * Time.deltaTime * Input.GetAxisRaw("Horizontal"));
         }
         if (Input.GetAxisRaw("Horizontal") == 0)
         {
