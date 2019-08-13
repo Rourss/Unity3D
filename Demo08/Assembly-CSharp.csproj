@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CharacterMove.cs" />
      <Compile Include="Assets\Scripts\MobileMove.cs" />
+     <Compile Include="Assets\Scripts\NavigMove.cs" />
      <Compile Include="Assets\Scripts\ThirdCameraMove.cs" />
      <Compile Include="Assets\UnityChan\Scripts\AutoBlink.cs" />
      <Compile Include="Assets\UnityChan\Scripts\AutoBlinkforSD.cs" />

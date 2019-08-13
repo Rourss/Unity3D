@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Runemark Assets/Freebies/Polygon Desert Pack/DesertScene.unity
+  isLoaded: 1
+  isActive: 1
