@@ -48,6 +48,9 @@
      <Compile Include="Assets\Scripts\Bigrd.cs" />
      <Compile Include="Assets\Scripts\CameraMove.cs" />
      <Compile Include="Assets\Scripts\Earth.cs" />
+     <Compile Include="Assets\Scripts\MobileMove.cs" />
+     <Compile Include="Assets\Scripts\RandomMove.cs" />
+     <Compile Include="Assets\Scripts\WallMove.cs" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
