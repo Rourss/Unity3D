@@ -16,6 +16,10 @@ public class CameraMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+         if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            transform.position = target.position;
+        }
         
     }
     void LateUpdate()
@@ -29,8 +33,12 @@ public class CameraMove : MonoBehaviour
         //    this.transform.RotateAround(this.transform.position, Vector3.up, Time.deltaTime * x * 50f);
         //    this.transform.RotateAround(this.transform.position, this.transform.right, Time.deltaTime * y * 50f);
         //}
+       
+
+
+       
+        
         //让摄像机一直在物体的上方，并跟随物体
         transform.LookAt(target.position);
-
     }
 }
