@@ -53,6 +53,7 @@
      <Compile Include="Assets\NDVRresources\SceneRcs\JingYeSi\Scripts\Water.cs" />
      <Compile Include="Assets\Scripts\LiBaiMove.cs" />
      <Compile Include="Assets\Scripts\RingMove.cs" />
+     <Compile Include="Assets\Scripts\VRButton.cs" />
      <Compile Include="Assets\Scripts\VRCameraMove.cs" />
      <None Include="Assets\NDVRresources\SceneRcs\JingYeSi\Shaders\DoubleSidedAlphaCutout.shader" />
      <None Include="Assets\NDVRresources\SceneRcs\JingYeSi\Shaders\FXWaterPro.shader" />
