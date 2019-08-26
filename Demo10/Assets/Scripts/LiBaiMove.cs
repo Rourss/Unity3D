@@ -9,7 +9,7 @@ public class LiBaiMove : MonoBehaviour
     private bool start;
     private float speed;
     private int vec;
-    private float vecAims=150;
+    public GameObject Poetry_UI;
     // Use this for initialization
     void Start()
     {
@@ -17,11 +17,16 @@ public class LiBaiMove : MonoBehaviour
         isTrigger = true;
         stop = true;
         start = false;
-        vecAims = -2f;
         libai = GetComponent<Animator>();
+        StartCoroutine(CreatPoetry());
     }
 
-    // Update is called once per frame
+    IEnumerator CreatPoetry()
+    {
+        yield return new WaitForSeconds(2);
+        Instantiate(Poetry_UI);
+    }
+   // Update is called once per frame
     void Update()
     {
         YouShen();

@@ -15,14 +15,14 @@ public class VRButton : MonoBehaviour
     void OnEnable()
     {
         publicRing.publicOnOver += OnOver;
-        publicRing.publicLoad += Load;
         publicRing.publicOnOut += OnOut;
+        publicRing.publicLoad += Load;
     }
     void OnDisable()
     {
         publicRing.publicOnOver -= OnOver;
-        publicRing.publicLoad -= Load;
         publicRing.publicOnOut -= OnOut;
+        publicRing.publicLoad -= Load;
     }
     void OnOver()
     {
@@ -34,7 +34,9 @@ public class VRButton : MonoBehaviour
     }
     void Load()
     {
-        if(publicRing)
-        Destroy(ui, 0.1f);
+        gameObject.GetComponent<BoxCollider>().enabled = false;
+        Destroy(ui, 0.2f);
+        GameObject.Find("JiaoHu").GetComponent<Animator>().enabled = true;
+        GameObject.Find("WindowsBtn").GetComponent<BoxCollider>().enabled = true;
     }
 }

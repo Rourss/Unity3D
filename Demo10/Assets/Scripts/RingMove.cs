@@ -7,7 +7,7 @@ using System;
 public class RingMove : MonoBehaviour
 {
     private  Image ring;
-    private bool onTrigger = false;
+    private bool onTrigger;
     private VRInteractiveItem activ;
     public event Action publicOnOver;
     public event Action publicOnOut;
@@ -55,11 +55,12 @@ public class RingMove : MonoBehaviour
         if (ring.fillAmount == 1)
         {
             ring.fillAmount = 0;
+            if (publicLoad != null)
+            {
+                publicLoad();
+            }
         }
-        if (publicLoad != null)
-        {
-            publicLoad();
-        }
+        
     }
     void Update()
     {

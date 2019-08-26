@@ -52,9 +52,11 @@
      <Compile Include="Assets\NDVRresources\SceneRcs\JingYeSi\Scripts\SkyBoxObject.cs" />
      <Compile Include="Assets\NDVRresources\SceneRcs\JingYeSi\Scripts\Water.cs" />
      <Compile Include="Assets\Scripts\LiBaiMove.cs" />
+     <Compile Include="Assets\Scripts\PoetryMove.cs" />
      <Compile Include="Assets\Scripts\RingMove.cs" />
      <Compile Include="Assets\Scripts\VRButton.cs" />
      <Compile Include="Assets\Scripts\VRCameraMove.cs" />
+     <Compile Include="Assets\Scripts\VROpen.cs" />
      <None Include="Assets\NDVRresources\SceneRcs\JingYeSi\Shaders\DoubleSidedAlphaCutout.shader" />
      <None Include="Assets\NDVRresources\SceneRcs\JingYeSi\Shaders\FXWaterPro.shader" />
      <None Include="Assets\NDVRresources\SceneRcs\JiaoHu\LiBai\Shader\Double Sided Transparent Diffuse Bump Cutout.shader" />
